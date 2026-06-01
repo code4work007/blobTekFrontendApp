@@ -10,13 +10,13 @@ export function CtaSection() {
           </h2>
           <p>
             Tell us about your project. We respond inside one business day with a concrete plan,
-            timeline and quote — no sales calls required.
+            timeline and quote no sales calls required.
           </p>
           <div className="cta-buttons">
-            <a href="#" className="btn btn-primary">
+            <a href="mailto:hello@blobtek.com?subject=Project%20Inquiry" className="btn btn-primary">
               Start a project <span className="btn-arrow">→</span>
             </a>
-            <a href="#" className="btn btn-ghost">
+            <a href="mailto:hello@blobtek.com?subject=Intro%20Call%20Request" className="btn btn-ghost">
               Book a 30-min intro call
             </a>
           </div>

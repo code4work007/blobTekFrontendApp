@@ -1,10 +1,13 @@
+import logoSrc from '@/asserts/logo.png';
+
 const footerLinks = {
   Services: [
+    'AI Automation',
     'AI & ML Integration',
-    'Custom Software',
-    'Cloud Infrastructure',
+    'Web & Mobile Development',
+    'Cloud & DevOps',
+    'Custom Software & APIs',
     'Cybersecurity',
-    'DevOps & SRE',
   ],
   Company: ['About', 'Work', 'Careers', 'Press'],
   Resources: ['Blog', 'Open source', 'Security', 'Contact'],
@@ -17,8 +20,8 @@ export function LandingFooter() {
         <div className="footer-inner">
           <div className="footer-brand">
             <a href="#" className="logo">
-              <span className="logo-mark" />
-              <span>Blob Tech</span>
+              <img src={logoSrc} alt="BlobTek logo" className="logo-mark-img" />
+              <span>BlobTek</span>
             </a>
             <p>
               A senior engineering studio for ambitious teams. Designing, building and running
@@ -41,7 +44,7 @@ export function LandingFooter() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Blob Tech, Inc. All rights reserved.</p>
+          <p>© 2026 BlobTek, Inc. All rights reserved.</p>
           <div className="socials">
             {/* X / Twitter */}
             <a href="#" className="social" aria-label="X/Twitter">

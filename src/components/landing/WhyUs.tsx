@@ -6,14 +6,14 @@ export function WhyUs() {
       <div className="why-bg-shape" />
       <div className="container why-inner">
         <div className="why-left reveal">
-          <div className="section-tag">Why Blob Tech</div>
+          <div className="section-tag">Why BlobTek</div>
           <h2 className="h-display">
             Sharp minds,{' '}
             <br />
             <span className="grad-text">soft edges.</span>
           </h2>
           <p>
-            We&apos;re built differently. Every project gets senior engineers — not a junior squad
+            We&apos;re built differently. Every project gets senior engineers not a junior squad
             shadowed by a partner. The work is fast, opinionated, and never feels like an outsource.
           </p>
         </div>

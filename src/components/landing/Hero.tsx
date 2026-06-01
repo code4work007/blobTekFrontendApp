@@ -17,11 +17,11 @@ export function Hero() {
             like thought.
           </h1>
           <p className="hero-sub">
-            Blob Tech is a senior engineering studio for ambitious teams. We design, build and run
-            AI-native products — from first prototype to global scale.
+            BlobTek is a senior engineering studio for ambitious teams. We design, build and run
+            AI-native products from first prototype to global scale.
           </p>
           <div className="hero-ctas">
-            <a href="#cta" className="btn btn-primary">
+            <a href="mailto:hello@blobtek.com?subject=Project%20Inquiry" className="btn btn-primary">
               Start a project <span className="btn-arrow">→</span>
             </a>
             <a href="#services" className="btn btn-ghost">
@@ -78,7 +78,7 @@ export function Hero() {
             <div className="gc-row">
               <span
                 className="gc-dot"
-                style={{ background: 'var(--c-cyan)', boxShadow: '0 0 10px var(--c-cyan)' }}
+                style={{ background: 'var(--c-amber)', boxShadow: '0 0 10px var(--c-amber)' }}
               />
               <div>
                 <div className="gc-title">ML inference</div>

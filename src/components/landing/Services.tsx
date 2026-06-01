@@ -17,7 +17,7 @@ export function Services() {
         <div className="section-head reveal">
           <div className="section-tag">What we do</div>
           <h2 className="h-display">
-            A full-stack studio for{' '}
+            Everything your product{' '}
             <span
               style={{
                 background: 'var(--grad-text)',
@@ -26,12 +26,12 @@ export function Services() {
                 WebkitTextFillColor: 'transparent',
               }}
             >
-              teams that build
+              needs to scale
             </span>
           </h2>
           <p className="sub">
-            Six disciplines, one fluid team. We embed with you end-to-end — from architecture to
-            production — so you ship faster without compromising on quality.
+            Six disciplines, one embedded team. From AI automation to native mobile we work
+            end-to-end with you, architecture to production, so you ship faster without cutting corners.
           </p>
         </div>
 
