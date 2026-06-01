@@ -1,11 +1,14 @@
 export const ROUTES = {
+  // Public
+  LANDING: '/',
+  HOME: '/',
+
   // Auth
   LOGIN: '/login',
   REGISTER: '/register',
   FORGOT_PASSWORD: '/forgot-password',
 
   // App
-  HOME: '/',
   DASHBOARD: '/dashboard',
   PROFILE: '/profile',
   SETTINGS: '/settings',

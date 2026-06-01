@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import { ROUTES } from '@/constants';
 import { ProtectedRoute } from './ProtectedRoute';
 import { PublicRoute } from './PublicRoute';
@@ -8,6 +8,7 @@ import { DashboardLayout } from '@/layouts/DashboardLayout';
 import { withSuspense } from './SuspenseWrapper';
 
 // Lazy-loaded page components
+const Landing = lazy(() => import('@/pages/Landing'));
 const Login = lazy(() => import('@/pages/auth/Login'));
 const Register = lazy(() => import('@/pages/auth/Register'));
 const ForgotPassword = lazy(() => import('@/pages/auth/ForgotPassword'));
@@ -18,8 +19,8 @@ const Users = lazy(() => import('@/pages/Users'));
 const NotFound = lazy(() => import('@/pages/NotFound'));
 
 export const router = createBrowserRouter([
-  // Root redirect
-  { path: '/', element: <Navigate to={ROUTES.DASHBOARD} replace /> },
+  // Landing page — public, no layout wrapper
+  { path: ROUTES.LANDING, element: withSuspense(Landing) },
 
   // Public (auth) routes
   {

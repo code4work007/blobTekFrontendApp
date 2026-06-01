@@ -6,6 +6,8 @@ dist/
 dist-ssr/
 temp/
 
+.agents/
+
 # Environment variables (never commit real secrets)
 .env
 .env.local
