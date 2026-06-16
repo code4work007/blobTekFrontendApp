@@ -1,4 +1,18 @@
+import { useEffect } from 'react';
+import { getCalApi } from '@calcom/embed-react';
+
 export function Hero() {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: '30min' });
+      cal('ui', {
+        cssVarsPerTheme: { light: { 'cal-brand': '#EE6E3A' } },
+        hideEventTypeDetails: false,
+        layout: 'month_view',
+      });
+    })();
+  }, []);
+
   return (
     <header className="hero">
       <div className="hero-bg-glow" />
@@ -21,9 +35,14 @@ export function Hero() {
             AI-native products from first prototype to global scale.
           </p>
           <div className="hero-ctas">
-            <a href="mailto:hello@blobtek.com?subject=Project%20Inquiry" className="btn btn-primary">
-              Start a project <span className="btn-arrow">→</span>
-            </a>
+            <button
+              className="btn btn-primary"
+              data-cal-namespace="30min"
+              data-cal-link="blobtek/30min"
+              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"auto"}'
+            >
+              Schedule a Call
+            </button>
             <a href="#services" className="btn btn-ghost">
               See what we do
             </a>
